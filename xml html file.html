@@ -42,6 +42,7 @@
         var team =
         xmlDoc.getElementsByTagName("Catfacts");
         var html = "";
+        var h3 = "";
         for (i = 0; i < team.length; i++) {
         html +=
         xmlDoc.getElementsByTagName(
@@ -49,11 +50,12 @@
         
         document.getElementById("team").innerHTML = html;
 
-        var h3 = "";
-        h3 = xmlDoc.getElementsByTagName("words")[0].childNodes[0].nodeValue;
-        document.getElementById("title").innerHTML = h3;
+        
+        
             
         }
+            h3 = xmlDoc.getElementsByTagName("words")[0].childNodes[0].nodeValue;
+        document.getElementById("title").innerHTML = h3;
         }
 
 
