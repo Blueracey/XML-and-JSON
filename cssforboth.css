@@ -1,0 +1,47 @@
+#team{
+
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: antiquewhite;
+    position: absolute;
+    right:200px;
+    left: 200px;
+    
+    
+}
+
+
+
+#parent{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  flex-direction: column;
+
+  
+    flex-direction: row;
+
+
+}
+
+
+#title { 
+
+    
+    
+    text-align: center;}
+
+
+#coulorBackground{
+    background-color: beige;
+    position: absolute;
+  right:250px;
+    left: 250px;
+
+
+}
