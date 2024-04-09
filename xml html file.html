@@ -41,13 +41,13 @@
         xmlDoc = xhr.responseXML;
             document.getElementById("title").innerHTML = xmlDoc.getElementsByTagName(
         "pageTitle")[0].childNodes[0].nodeValue ;
-        var team =
-        xmlDoc.getElementsByTagName("teammember");
+        var fact =
+        xmlDoc.getElementsByTagName("fact");
         var html = "";
-        for (i = 0; i < team.length; i++) {
+        for (i = 0; i < fact.length; i++) {
         html +=
         xmlDoc.getElementsByTagName(
-        "name")[i].childNodes[0].nodeValue+ "<br>" ; }
+        "catfact")[i].childNodes[0].nodeValue+ "<br>" ; }
         document.getElementById("team").innerHTML = html;
         }
         }
