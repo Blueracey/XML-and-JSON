@@ -36,10 +36,10 @@
 
     $(document).ready(function(){
 $.getJSON("JSON html File.json", function(data){
-$("#title").append(
- value.pageTitle + "<br>" )
 $.each(data, function() {
 $.each(this, function(key, value) {
+    $("#title").append(
+ value.pageTitle + "<br>" )
 $("#fact").append(
  value.catfact + "<br>" 
 
