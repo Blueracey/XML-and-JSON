@@ -27,7 +27,7 @@
         
 
 
-    <div id="team">Whatever path we choose in life, it often leads us through a maze of uncertainty and challenges. Whether we navigate these obstacles with grace or stumble along the way, each experience shapes us in unique ways. Whatever dreams we harbor in our hearts, they fuel our journey and propel us forward, even when the road ahead seems daunting. Whatever trials we face, they test our resilience and fortitude, revealing the depths of our character. Whatever the outcome, whether success or failure, each moment teaches us invaluable lessons about ourselves and the world around us. In the end, whatever the circumstances, it is our response that defines our story and ultimately determines our destiny.</div>
+    <div id="fact"> </div>
 
     </div>
 </div>
@@ -48,7 +48,7 @@
         html +=
         xmlDoc.getElementsByTagName(
         "catfact")[i].childNodes[0].nodeValue+ "<br>" ; }
-        document.getElementById("team").innerHTML = html;
+        document.getElementById("fact").innerHTML = html;
         }
         }
         xhr.open("GET", "XML File.xml", true);
