@@ -10,16 +10,11 @@
 <name>Wilbur</name>
 <title>Founder and CEO</title>
 <bio>While Wilbur is the founder and CEO ... </bio>
+  <pageTitle>This is a Title</pageTitle>
 </teammember>
 </management>
 
 
 
 
-<Words>
-  <Parent>
-<Title>This is a Title</Title>
-  </Parent>
 
-
-</Words>
