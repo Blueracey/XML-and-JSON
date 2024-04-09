@@ -27,7 +27,7 @@
         
 
 
-    <div id="team">Whatever path we choose in life, it often leads us through a maze of uncertainty and challenges. Whether we navigate these obstacles with grace or stumble along the way, each experience shapes us in unique ways. Whatever dreams we harbor in our hearts, they fuel our journey and propel us forward, even when the road ahead seems daunting. Whatever trials we face, they test our resilience and fortitude, revealing the depths of our character. Whatever the outcome, whether success or failure, each moment teaches us invaluable lessons about ourselves and the world around us. In the end, whatever the circumstances, it is our response that defines our story and ultimately determines our destiny.</div>
+    <div id="fact"> </div>
 
     </div>
 </div>
@@ -39,20 +39,16 @@
         xhr.onreadystatechange = function() {
         if (xhr.readyState == 4 && xhr.status == 200) {
         xmlDoc = xhr.responseXML;
-        var team =
-        xmlDoc.getElementsByTagName("teammember");
+            document.getElementById("title").innerHTML = xmlDoc.getElementsByTagName(
+        "pageTitle")[0].childNodes[0].nodeValue ;
+        var fact =
+        xmlDoc.getElementsByTagName("fact");
         var html = "";
-        for (i = 0; i < team.length; i++) {
+        for (i = 0; i < fact.length; i++) {
         html +=
         xmlDoc.getElementsByTagName(
-        "name")[i].childNodes[0].nodeValue + "<br>" +
-        xmlDoc.getElementsByTagName(
-        "title")[i] .childNodes[0].nodeValue +
-        "<br>" +
-        xmlDoc.getElementsByTagName(
-        "bio")[i] .childNodes[0].nodeValue +
-        "<br><br>"; }
-        document.getElementById("team").innerHTML = html;
+        "catfact")[i].childNodes[0].nodeValue+ "<br>" ; }
+        document.getElementById("fact").innerHTML = html;
         }
         }
         xhr.open("GET", "JSON File.json", true);
@@ -62,7 +58,8 @@
         </script>
 
 </body>
-
+ 
 
 </html>
+
 
