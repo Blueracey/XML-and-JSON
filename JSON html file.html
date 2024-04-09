@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+
+        <meta charset = "utf-8"> 
+
+
+        <meta name = "viewport" content="width==device-width, initial-scale=1">
+
+        
+        <link rel ="stylesheet" href="cssforboth.css"> 
+        <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+
+        <title>teah</title>
+
+
+    </head>
+
+<body>
+
+    <div id = "coulorBackground" >
+    <h3 id = "title" >aasgasg </h3>
+    <div id = "parent">
+
+        
+
+
+    <div id="team">Whatever path we choose in life, it often leads us through a maze of uncertainty and challenges. Whether we navigate these obstacles with grace or stumble along the way, each experience shapes us in unique ways. Whatever dreams we harbor in our hearts, they fuel our journey and propel us forward, even when the road ahead seems daunting. Whatever trials we face, they test our resilience and fortitude, revealing the depths of our character. Whatever the outcome, whether success or failure, each moment teaches us invaluable lessons about ourselves and the world around us. In the end, whatever the circumstances, it is our response that defines our story and ultimately determines our destiny.</div>
+
+    </div>
+</div>
+
+    <script>
+
+    $(document).ready(function() {
+        xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function() {
+        if (xhr.readyState == 4 && xhr.status == 200) {
+        xmlDoc = xhr.responseXML;
+        var team =
+        xmlDoc.getElementsByTagName("teammember");
+        var html = "";
+        for (i = 0; i < team.length; i++) {
+        html +=
+        xmlDoc.getElementsByTagName(
+        "name")[i].childNodes[0].nodeValue + "<br>" +
+        xmlDoc.getElementsByTagName(
+        "title")[i] .childNodes[0].nodeValue +
+        "<br>" +
+        xmlDoc.getElementsByTagName(
+        "bio")[i] .childNodes[0].nodeValue +
+        "<br><br>"; }
+        document.getElementById("team").innerHTML = html;
+        }
+        }
+        xhr.open("GET", "JSON File.json", true);
+        xhr.send();
+        });
+        
+        </script>
+
+</body>
+
+
+</html>
+
