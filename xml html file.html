@@ -21,13 +21,13 @@
 <body>
 
     <div id = "coulorBackground" >
-    <h1 id = "title" > </h1>
+    <h3 id = "title" >aasgasg </h3>
     <div id = "parent">
 
         
 
 
-    <div id="team"></div>
+    <div id="team">Whatever path we choose in life, it often leads us through a maze of uncertainty and challenges. Whether we navigate these obstacles with grace or stumble along the way, each experience shapes us in unique ways. Whatever dreams we harbor in our hearts, they fuel our journey and propel us forward, even when the road ahead seems daunting. Whatever trials we face, they test our resilience and fortitude, revealing the depths of our character. Whatever the outcome, whether success or failure, each moment teaches us invaluable lessons about ourselves and the world around us. In the end, whatever the circumstances, it is our response that defines our story and ultimately determines our destiny.</div>
 
     </div>
 </div>
@@ -40,32 +40,24 @@
         if (xhr.readyState == 4 && xhr.status == 200) {
         xmlDoc = xhr.responseXML;
         var team =
-        xmlDoc.getElementsByTagName("Catfacts");
+        xmlDoc.getElementsByTagName("teammember");
         var html = "";
-        var h3 = "";
         for (i = 0; i < team.length; i++) {
         html +=
         xmlDoc.getElementsByTagName(
-        "fact")[i].childNodes[0].nodeValue + "<br>" ;
-        
+        "name")[i].childNodes[0].nodeValue + "<br>" +
+        xmlDoc.getElementsByTagName(
+        "title")[i] .childNodes[0].nodeValue +
+        "<br>" +
+        xmlDoc.getElementsByTagName(
+        "bio")[i] .childNodes[0].nodeValue +
+        "<br><br>"; }
         document.getElementById("team").innerHTML = html;
-
-        
-        
-            
         }
-            h3 = xmlDoc.getElementsByTagName("words")[1].childNodes[0].nodeValue;
-        document.getElementById("title").innerHTML = h3;
         }
-
-
-
-
-
-
         xhr.open("GET", "XML File.xml", true);
         xhr.send();
-        }});
+        });
         
         </script>
 
@@ -73,4 +65,6 @@
 
 
 </html>
+
+
 
