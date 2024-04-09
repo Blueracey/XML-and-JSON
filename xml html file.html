@@ -39,6 +39,8 @@
         xhr.onreadystatechange = function() {
         if (xhr.readyState == 4 && xhr.status == 200) {
         xmlDoc = xhr.responseXML;
+            document.getElementById("title").innerHTML = xmlDoc.getElementsByTagName(
+        "pageTitle")[0].childNodes[0].nodeValue ;
         var team =
         xmlDoc.getElementsByTagName("teammember");
         var html = "";
@@ -56,7 +58,7 @@
         </script>
 
 </body>
-
+ 
 
 </html>
 
