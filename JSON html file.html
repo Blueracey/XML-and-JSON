@@ -27,27 +27,28 @@
         
 
 
-    <div id="fact"> </div>
+    <div id="team"> </div>
 
     </div>
 </div>
 
     <script>
 
-    $(document).ready(function(){
-$.getJSON("JSON File.json", function(data){
+  $(document).ready(function(){
+$.getJSON("team.json", function(data){
 $.each(data, function() {
 $.each(this, function(key, value) {
-$("#fact").append(
-"Name: " + value.catfact + "<br>" 
-
-
+$("#team").append(
+"Name: " + value.name + "<br>" +
+Slide
+25
+value.title"Title: " + + "<br>" +
+value.bio"Bio: " + + "<br><br>"
 );
 });
 });
 });
 });
-        
         </script>
 
 </body>
