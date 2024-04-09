@@ -1,4 +1,4 @@
- <?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <management>
 <teammember>
 <name>Agnes</name>
@@ -13,11 +13,6 @@
 </teammember>
 </management>
 
-<Words>
-  <Parent>
-<Title>This is a Title</Title>
-  </Parent>
 
 
-</Words>
 
