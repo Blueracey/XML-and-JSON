@@ -1,18 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<header>
-<titlepage>
-<words>Cat facts</words>
-
-</titlepage>
-</header>
-
-<ParentFacts>
-<Catfacts>
-<fact>cat are cats </fact>
-<fact>cat's come in many shapes and sizes</fact>
-<fact>Some orange some grey
-</fact>
-</Catfacts>
-</ParentFacts>
-
+<management>
+<teammember>
+<name>Agnes</name>
+<title>Vice President of Accounting</title>
+<bio>With over 14 years of public accounting ...
+</bio>
+</teammember>
+<teammember>
+<name>Wilbur</name>
+<title>Founder and CEO</title>
+<bio>While Wilbur is the founder and CEO ... </bio>
+</teammember>
+</management>
